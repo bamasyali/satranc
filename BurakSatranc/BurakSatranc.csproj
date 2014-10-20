@@ -1,0 +1,253 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CF9C22A-FA10-4C66-8440-3E858D347723}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BurakSatranc</RootNamespace>
+    <AssemblyName>BurakSatranc</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Anasayfa.aspx" />
+    <Content Include="Basari.aspx" />
+    <Content Include="Captcha\JpegImage.aspx" />
+    <Content Include="FareIleOyna.aspx" />
+    <Content Include="mail.aspx" />
+    <Content Include="MasaOlustur.aspx" />
+    <Content Include="Onayla.aspx" />
+    <Content Include="OyunaKatil.aspx" />
+    <Content Include="OyunBul.aspx" />
+    <Content Include="ProfilDuzenle.aspx" />
+    <Content Include="SifreDegistir.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="GuvenliCikis.aspx" />
+    <Content Include="Hata.aspx" />
+    <Content Include="KullaniciGirisi.aspx" />
+    <Content Include="Oyun.aspx" />
+    <Content Include="Resimler\back.png" />
+    <Content Include="Resimler\back1.gif" />
+    <Content Include="Resimler\bat.gif" />
+    <Content Include="Resimler\bfil.gif" />
+    <Content Include="Resimler\bkale.gif" />
+    <Content Include="Resimler\bpiyon.gif" />
+    <Content Include="Resimler\bsah.gif" />
+    <Content Include="Resimler\bvezir.gif" />
+    <Content Include="Resimler\pc4.gif" />
+    <Content Include="Resimler\pc7.gif" />
+    <Content Include="Resimler\sat.gif" />
+    <Content Include="Resimler\sfil.gif" />
+    <Content Include="Resimler\skale.gif" />
+    <Content Include="Resimler\spiyon.gif" />
+    <Content Include="Resimler\ssah.gif" />
+    <Content Include="Resimler\svezir.gif" />
+    <Content Include="TheManWhoRuleThisSite.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Yazismali.aspx" />
+    <Content Include="YeniUye.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.aspx.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.aspx.designer.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="Basari.aspx.cs">
+      <DependentUpon>Basari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basari.aspx.designer.cs">
+      <DependentUpon>Basari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Captcha\CaptchaImage.cs" />
+    <Compile Include="Captcha\JpegImage.aspx.cs">
+      <DependentUpon>JpegImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FareIleOyna.aspx.cs">
+      <DependentUpon>FareIleOyna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FareIleOyna.aspx.designer.cs">
+      <DependentUpon>FareIleOyna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guvenlik.cs" />
+    <Compile Include="mail.aspx.cs">
+      <DependentUpon>mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mail.aspx.designer.cs">
+      <DependentUpon>mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasaOlustur.aspx.cs">
+      <DependentUpon>MasaOlustur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasaOlustur.aspx.designer.cs">
+      <DependentUpon>MasaOlustur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Onayla.aspx.cs">
+      <DependentUpon>Onayla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Onayla.aspx.designer.cs">
+      <DependentUpon>Onayla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OyunaKatil.aspx.cs">
+      <DependentUpon>OyunaKatil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OyunaKatil.aspx.designer.cs">
+      <DependentUpon>OyunaKatil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OyunBul.aspx.cs">
+      <DependentUpon>OyunBul.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OyunBul.aspx.designer.cs">
+      <DependentUpon>OyunBul.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilDuzenle.aspx.cs">
+      <DependentUpon>ProfilDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfilDuzenle.aspx.designer.cs">
+      <DependentUpon>ProfilDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SifreDegistir.aspx.cs">
+      <DependentUpon>SifreDegistir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SifreDegistir.aspx.designer.cs">
+      <DependentUpon>SifreDegistir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChessTable.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuvenliCikis.aspx.cs">
+      <DependentUpon>GuvenliCikis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuvenliCikis.aspx.designer.cs">
+      <DependentUpon>GuvenliCikis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hata.aspx.cs">
+      <DependentUpon>Hata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hata.aspx.designer.cs">
+      <DependentUpon>Hata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGirisi.aspx.cs">
+      <DependentUpon>KullaniciGirisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciGirisi.aspx.designer.cs">
+      <DependentUpon>KullaniciGirisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masa.cs" />
+    <Compile Include="Oyun.aspx.cs">
+      <DependentUpon>Oyun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oyun.aspx.designer.cs">
+      <DependentUpon>Oyun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TheManWhoRuleThisSite.aspx.cs">
+      <DependentUpon>TheManWhoRuleThisSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TheManWhoRuleThisSite.aspx.designer.cs">
+      <DependentUpon>TheManWhoRuleThisSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yazismali.aspx.cs">
+      <DependentUpon>Yazismali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yazismali.aspx.designer.cs">
+      <DependentUpon>Yazismali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YeniUye.aspx.cs">
+      <DependentUpon>YeniUye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YeniUye.aspx.designer.cs">
+      <DependentUpon>YeniUye.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4394</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
